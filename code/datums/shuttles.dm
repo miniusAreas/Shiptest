@@ -423,7 +423,7 @@
 	name = "Limnos-Class Budget Shuttle"
 	prefix = "ISV"
 
-/datum/map_template/shuttle/subshuttles/limnos(d)
+/datum/map_template/shuttle/subshuttles/limnos_d
 	file_name = "independent_limnos(d)"
 	name = "Limnos(d)-Class Budget Shuttle"
 	prefix = "ISV"
