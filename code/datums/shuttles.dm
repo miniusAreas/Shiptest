@@ -417,13 +417,12 @@
 	name = "Skink-class Cargo Runner"
 	prefix = "NTSV"
 
-
 /datum/map_template/shuttle/subshuttles/limnos
 	file_name = "independent_limnos"
 	name = "Limnos-Class Budget Shuttle"
 	prefix = "ISV"
 
-/datum/map_template/shuttle/subshuttles/limnos_d
-	file_name = "independent_limnos(d)"
+/datum/map_template/shuttle/subshuttles/limnos_d //fuck you stupid piece of shit. breaking my entire fucking datum. go my limnos.
+	file_name = "independent_limnos_d"
 	name = "Limnos(d)-Class Budget Shuttle"
 	prefix = "ISV"

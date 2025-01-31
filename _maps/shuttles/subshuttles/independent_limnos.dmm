@@ -9,21 +9,35 @@
 	},
 /obj/structure/chair/comfy/shuttle{
 	dir = 4;
-	layer = 3.3;
 	pixel_x = 10
 	},
 /obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
+/obj/item/radio/intercom/wideband/directional/south,
 /turf/open/floor/plasteel/patterned/grid,
 /area/ship/storage/eva)
 "f" = (
 /turf/closed/wall/rust/yesdiag,
 /area/ship/storage/eva)
+"g" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced/fulltile,
+/obj/machinery/door/poddoor/shutters{
+	id = "limnos_shutters";
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/ship/storage/eva)
 "i" = (
 /obj/effect/turf_decal/corner_techfloor_grid/full,
 /obj/machinery/atmospherics/components/unary/portables_connector/visible,
+/obj/machinery/light_switch{
+	dir = 4;
+	pixel_x = -19;
+	pixel_y = 3
+	},
 /turf/open/floor/plasteel,
 /area/ship/storage/eva)
 "j" = (
@@ -32,6 +46,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/yellow/hidden,
 /obj/machinery/atmospherics/components/unary/portables_connector/visible/layer4,
+/obj/machinery/light/directional/east,
 /turf/open/floor/plasteel,
 /area/ship/storage/eva)
 "k" = (
@@ -40,6 +55,9 @@
 /obj/machinery/door/window/brigdoor/northleft,
 /obj/structure/window/reinforced{
 	dir = 8
+	},
+/obj/machinery/door/poddoor/shutters{
+	id = "limnos_shutters"
 	},
 /turf/open/floor/plating,
 /area/ship/storage/eva)
@@ -52,6 +70,18 @@
 	},
 /obj/structure/chair/handrail{
 	dir = 1
+	},
+/obj/machinery/button/door{
+	pixel_y = 24;
+	pixel_x = -8;
+	name = "window button";
+	id = "limnos_shutters"
+	},
+/obj/machinery/button/door{
+	pixel_y = 24;
+	pixel_x = 3;
+	name = "hatch button";
+	id = "limnos_door"
 	},
 /turf/open/floor/plasteel/patterned/grid,
 /area/ship/storage/eva)
@@ -85,6 +115,9 @@
 	dir = 10
 	},
 /obj/structure/window/reinforced,
+/obj/machinery/door/poddoor/shutters{
+	id = "limnos_shutters"
+	},
 /turf/open/floor/plating,
 /area/ship/storage/eva)
 "D" = (
@@ -98,6 +131,9 @@
 "E" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced/fulltile,
+/obj/machinery/door/poddoor/shutters{
+	id = "limnos_shutters"
+	},
 /turf/open/floor/plating,
 /area/ship/storage/eva)
 "F" = (
@@ -109,6 +145,9 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
+/obj/machinery/door/poddoor/shutters{
+	id = "limnos_shutters"
+	},
 /turf/open/floor/plating,
 /area/ship/storage/eva)
 "I" = (
@@ -119,6 +158,9 @@
 	},
 /obj/structure/window/reinforced{
 	dir = 1
+	},
+/obj/machinery/door/poddoor/shutters{
+	id = "limnos_shutters"
 	},
 /turf/open/floor/plating,
 /area/ship/storage/eva)
@@ -164,7 +206,8 @@
 /area/ship/storage/eva)
 "V" = (
 /obj/machinery/door/airlock/external{
-	dir = 4
+	dir = 4;
+	req_ship_access = 0
 	},
 /obj/machinery/door/firedoor/border_only{
 	dir = 8
@@ -174,6 +217,10 @@
 	name = "limnos shuttle";
 	port_direction = 2;
 	preferred_direction = 4
+	},
+/obj/machinery/door/poddoor/preopen{
+	dir = 4;
+	id = "limnos_door"
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/storage/eva)
@@ -226,7 +273,7 @@ q
 (7,1,1) = {"
 q
 E
-E
+g
 E
 q
 "}
